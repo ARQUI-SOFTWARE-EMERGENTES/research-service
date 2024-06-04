@@ -6,7 +6,6 @@ import com.papervoult.research.mapping.ResearchRecordMapper;
 import com.papervoult.research.resource.CreateResearchRecordResource;
 import com.papervoult.research.resource.ResearchRecordResource;
 import com.papervoult.research.resource.UpdateResearchRecordResource;
-import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
