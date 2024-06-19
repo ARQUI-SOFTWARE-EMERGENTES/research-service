@@ -6,6 +6,7 @@ import lombok.Setter;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.With;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Date;
 
@@ -18,7 +19,7 @@ public class UpdateResearchRecordResource {
     private Integer id;
     private String title;
     private String abstractText;
-    private String content;
+    private MultipartFile content; // Usar MultipartFile para manejar archivos
     private ReviewStatus reviewStatus;
     private boolean authenticated;
     private Date submissionDate;

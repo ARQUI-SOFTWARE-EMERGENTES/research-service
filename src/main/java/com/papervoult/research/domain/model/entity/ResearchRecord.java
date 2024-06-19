@@ -26,7 +26,7 @@ public class ResearchRecord {
 
     @Lob
     @Column(nullable = false)
-    private String content;
+    private byte[] content; // Asegúrate de que sea byte[]
 
     @Enumerated(EnumType.STRING)
     @Column(length = 50, nullable = false)
@@ -42,6 +42,4 @@ public class ResearchRecord {
     @Temporal(TemporalType.DATE)
     @Column(nullable = false)
     private Date lastModifiedDate;
-
-
 }
